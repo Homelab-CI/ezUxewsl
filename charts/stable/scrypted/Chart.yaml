@@ -9,7 +9,7 @@ kubeVersion: ">=1.16.0-0"
 keywords:
   - scrypted
 home: https://github.com/homelab-ci/ezUxewsl/tree/master/charts/stable/scrypted
-icon: https://scrypted.org/icon
+icon: https://raw.githubusercontent.com/koush/scrypted/main/install/logo.png
 sources:
   - https://github.com/koush/scrypted
 maintainers:
