@@ -6,4 +6,4 @@
 ### Incubator charts:
 | Chart | Description |
 | ----- | ----------- |
-| [scrypted](incubator/scrypted) | scrypted helm package |
+| [scrypted](stable/scrypted) | scrypted helm package |
