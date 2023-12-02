@@ -93,7 +93,7 @@ jobs:
         uses: helm/chart-releaser-action@v1.4.0
         with:
           charts_dir: charts/*
-          charts_repo_url: https://k8s-at-home.com/charts/
+          charts_repo_url: https://homelab-ci.github.io/ezUxewsl/
         env:
           CR_TOKEN: "${{ steps.generate-token.outputs.token }}"
           CR_SKIP_EXISTING: "true"
@@ -108,8 +108,8 @@ jobs:
         uses: tibdex/github-app-token@v1
         id: generate-token
         with:
-          app_id: ${{ secrets.K8S_AT_HOME_APP_ID }}
-          private_key: ${{ secrets.K8S_AT_HOME_APP_PRIVATE_KEY }}
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.PRIVATE_KEY }}
 
       - name: Checkout
         uses: actions/checkout@v3
@@ -132,7 +132,7 @@ jobs:
         with:
           push_options: --force
           commit_message: Auto-generate chart summary [no ci]
-          commit_user_name: k8s-at-home[bot]
-          commit_user_email: k8s-at-home[bot]@users.noreply.github.com
-          commit_author: k8s-at-home[bot] <k8s-at-home[bot]@users.noreply.github.com>
+          commit_user_name: homelab-ci[bot]
+          commit_user_email: homelab-ci[bot]@users.noreply.github.com
+          commit_author: homelab-ci[bot] <homelab-ci[bot]@users.noreply.github.com>
           file_pattern: charts/README.md
