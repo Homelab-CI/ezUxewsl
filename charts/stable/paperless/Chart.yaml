@@ -1,6 +1,6 @@
 ---
 apiVersion: v2
-appVersion: 1.8.0
+appVersion: 2.0.0
 description: Paperless - Index and archive all of your scanned paper documents
 name: paperless
 version: 9.1.3
