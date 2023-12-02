@@ -15,7 +15,7 @@ maintainers:
     email: ${CHARTNAME}@${CHARTNAME}.com
 dependencies:
   - name: common
-    repository: https://library-charts.k8s-at-home.com
+    repository: https://homelab-ci.github.io/library-1ezUxewsl
     version: 4.5.2
 annotations:
   artifacthub.io/changes: |

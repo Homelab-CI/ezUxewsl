@@ -19,7 +19,7 @@ maintainers:
     email: charts@mor.re
 dependencies:
   - name: common
-    repository: https://library-charts.k8s-at-home.com
+    repository: https://homelab-ci.github.io/library-ezUxewsl
     version: 4.5.2
   - name: postgresql
     version: 11.6.12

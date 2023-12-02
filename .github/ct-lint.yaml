@@ -7,6 +7,6 @@ chart-dirs:
 excluded-charts:
 chart-repos:
   - bitnami=https://charts.bitnami.com/bitnami
-  - k8s-at-home-libraries=https://library-charts.k8s-at-home.com
+  - homelab-ci-libraries=https://homelab-ci.github.io/library-ezUxewsl
   - homelab-ci=https://homelab-ci.github.io/ezUxewsl
   - jetstack=https://charts.jetstack.io
