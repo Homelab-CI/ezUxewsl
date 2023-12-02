@@ -1,0 +1,72 @@
+apiVersion: v1
+entries:
+  paperless:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgraded `common` chart dependency to version 4.5.2
+    apiVersion: v2
+    appVersion: 1.8.0
+    created: "2022-08-02T14:41:50.667147598Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.6.12
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.13.1
+    description: Paperless - Index and archive all of your scanned paper documents
+    digest: 30039ea562edd9bbf43c7c68f8a5463c341560f28899ae1eaf72182689b9d693
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/paperless
+    icon: https://avatars.githubusercontent.com/u/47271576?s=200&v=4
+    keywords:
+    - paperless
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - name: mr-onion-2
+    - email: jonathan@jonnobrow.co.uk
+      name: jonnobrow
+    - email: charts@mor.re
+      name: morremeyer
+    name: paperless
+    sources:
+    - https://github.com/paperless-ngx/paperless-ngx
+    urls:
+    - https://github.com/k8s-at-home/charts/releases/download/paperless-9.1.3/paperless-9.1.3.tgz
+    version: 9.1.3
+  scrypted:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgraded `common` chart dependency to version 4.5.2
+    apiVersion: v2
+    appVersion: 0.0.138
+    created: "2022-08-02T14:41:54.873364405Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: scrypted helm package
+    digest: b3a909ad5762723b4f01795f5f616d700d69c6353c5160d6a1ce538f14588431
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/scrypted
+    icon: https://scrypted.org/icon
+    keywords:
+    - scrypted
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: koush@scrypted.com
+      name: scrypted
+    name: scrypted
+    sources:
+    - https://github.com/koush/scrypted
+    type: application
+    urls:
+    - https://github.com/k8s-at-home/charts/releases/download/scrypted-0.3.2/scrypted-0.3.2.tgz
+    version: 0.3.2
+
+generated: "2022-08-19T23:24:28.714949325Z"
