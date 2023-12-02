@@ -4,7 +4,7 @@ appVersion: 0.0.138
 description: scrypted helm package
 name: scrypted
 type: application
-version: 0.3.3
+version: 0.3.4
 kubeVersion: ">=1.16.0-0"
 keywords:
   - scrypted
@@ -22,6 +22,8 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Bumped app version to 0.3.3    
+      description: Bumped app version to 0.3.4  
+    - kind: changed
+      description: Bumped app version to 0.3.3        
     - kind: changed
       description: Upgraded `common` chart dependency to version 4.5.2
