@@ -82,6 +82,35 @@ entries:
   scrypted:
   - annotations:
       artifacthub.io/changes: "- kind: changed\n  description: Bumped app version
+        to 0.3.4  \n- kind: changed\n  description: Bumped app version to 0.3.3        \n-
+        kind: changed\n  description: Upgraded `common` chart dependency to version
+        4.5.2"
+    apiVersion: v2
+    appVersion: 0.0.138
+    created: "2023-12-02T02:55:25.62453304Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: scrypted helm package
+    digest: 6cda3c1ea9358c136e573dd8029ba1ae4ffe3e28914cc053b11d2ee4bdd2033d
+    home: https://github.com/homelab-ci/ezUxewsl/tree/master/charts/stable/scrypted
+    icon: https://scrypted.org/icon
+    keywords:
+    - scrypted
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: koush@scrypted.com
+      name: scrypted
+    name: scrypted
+    sources:
+    - https://github.com/koush/scrypted
+    type: application
+    urls:
+    - https://github.com/Homelab-CI/ezUxewsl/releases/download/scrypted-0.3.4/scrypted-0.3.4.tgz
+    version: 0.3.4
+  - annotations:
+      artifacthub.io/changes: "- kind: changed\n  description: Bumped app version
         to 0.3.3    \n- kind: changed\n  description: Upgraded `common` chart dependency
         to version 4.5.2"
     apiVersion: v2
@@ -136,4 +165,4 @@ entries:
     urls:
     - https://github.com/k8s-at-home/charts/releases/download/scrypted-0.3.2/scrypted-0.3.2.tgz
     version: 0.3.2
-generated: "2023-12-02T02:53:09.844710502Z"
+generated: "2023-12-02T02:55:25.624550893Z"
