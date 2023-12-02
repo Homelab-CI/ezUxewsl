@@ -10,14 +10,14 @@ jobs:
   labels:
     name: Sync Labels
     runs-on: ubuntu-latest
-    if: github.repository == 'k8s-at-home/charts'
+    if: github.repository == 'homelab-ci/ezUxewsl'
     steps:
       - name: Generate Token
         uses: tibdex/github-app-token@v1
         id: generate-token
         with:
-          app_id: ${{ secrets.K8S_AT_HOME_APP_ID }}
-          private_key: ${{ secrets.K8S_AT_HOME_APP_PRIVATE_KEY }}
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.PRIVATE_KEY }}
 
       - name: Checkout
         uses: actions/checkout@v3
