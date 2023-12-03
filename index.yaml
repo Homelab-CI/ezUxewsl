@@ -14,7 +14,7 @@ entries:
     created: "2023-12-02T03:15:19.383373801Z"
     dependencies:
     - name: common
-      repository: https://library-charts.k8s-at-home.com
+      repository: https://homelab-ci.github.io/library-ezUxewsl
       version: 4.5.2
     - condition: postgresql.enabled
       name: postgresql
@@ -54,7 +54,7 @@ entries:
     created: "2023-12-02T01:49:55.473272032Z"
     dependencies:
     - name: common
-      repository: https://library-charts.k8s-at-home.com
+      repository: https://homelab-ci.github.io/library-ezUxewsl
       version: 4.5.2
     - condition: postgresql.enabled
       name: postgresql
@@ -66,7 +66,7 @@ entries:
       version: 16.13.1
     description: Paperless - Index and archive all of your scanned paper documents
     digest: cd46bed015be8ab3c99f3ef24dbbe4592926008f2476af45c586b922d214258c
-    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/paperless
+    home: https://github.com/homelab-ci/charts/tree/master/charts/stable/paperless
     icon: https://avatars.githubusercontent.com/u/47271576?s=200&v=4
     keywords:
     - paperless
@@ -132,7 +132,7 @@ entries:
     created: "2023-12-02T03:15:19.509141779Z"
     dependencies:
     - name: common
-      repository: https://library-charts.k8s-at-home.com
+      repository: https://homelab-ci.github.io/library-ezUxewsl
       version: 4.5.2
     description: scrypted helm package
     digest: c2a8d7ea88202d4a75cbe65cb7bdd412b520fb788e856b2110996b73741e6b82
@@ -161,7 +161,7 @@ entries:
     created: "2023-12-02T02:55:25.62453304Z"
     dependencies:
     - name: common
-      repository: https://library-charts.k8s-at-home.com
+      repository: https://homelab-ci.github.io/library-ezUxewsl
       version: 4.5.2
     description: scrypted helm package
     digest: 6cda3c1ea9358c136e573dd8029ba1ae4ffe3e28914cc053b11d2ee4bdd2033d
@@ -189,7 +189,7 @@ entries:
     created: "2023-12-02T02:53:09.844700914Z"
     dependencies:
     - name: common
-      repository: https://library-charts.k8s-at-home.com
+      repository: https://homelab-ci.github.io/library-ezUxewsl
       version: 4.5.2
     description: scrypted helm package
     digest: 0a5d049af074b793279a2195693b3ee7aedf9252086f326bfb03072c39b6524d
