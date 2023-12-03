@@ -92,7 +92,7 @@ entries:
     created: "2022-08-02T14:41:50.667147598Z"
     dependencies:
     - name: common
-      repository: https://library-charts.k8s-at-home.com
+      repository: https://homelab-ci.github.io/library-ezUxewsl
       version: 4.5.2
     - condition: postgresql.enabled
       name: postgresql
@@ -104,7 +104,7 @@ entries:
       version: 16.13.1
     description: Paperless - Index and archive all of your scanned paper documents
     digest: 30039ea562edd9bbf43c7c68f8a5463c341560f28899ae1eaf72182689b9d693
-    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/paperless
+    home: https://github.com/homelab-ci/charts/tree/master/charts/stable/paperless
     icon: https://avatars.githubusercontent.com/u/47271576?s=200&v=4
     keywords:
     - paperless
@@ -119,7 +119,7 @@ entries:
     sources:
     - https://github.com/paperless-ngx/paperless-ngx
     urls:
-    - https://github.com/k8s-at-home/charts/releases/download/paperless-9.1.3/paperless-9.1.3.tgz
+    - https://github.com/homelab-ci/charts/releases/download/paperless-9.1.3/paperless-9.1.3.tgz
     version: 9.1.3
   scrypted:
   - annotations:
@@ -217,11 +217,11 @@ entries:
     created: "2022-08-02T14:41:54.873364405Z"
     dependencies:
     - name: common
-      repository: https://library-charts.k8s-at-home.com
+      repository: https://homelab-ci.github.io/library-ezUxewsl
       version: 4.5.2
     description: scrypted helm package
     digest: b3a909ad5762723b4f01795f5f616d700d69c6353c5160d6a1ce538f14588431
-    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/scrypted
+    home: https://github.com/homelab-ci/charts/tree/master/charts/stable/scrypted
     icon: https://scrypted.org/icon
     keywords:
     - scrypted
@@ -234,6 +234,6 @@ entries:
     - https://github.com/koush/scrypted
     type: application
     urls:
-    - https://github.com/k8s-at-home/charts/releases/download/scrypted-0.3.2/scrypted-0.3.2.tgz
+    - https://github.com/homelab-ci/charts/releases/download/scrypted-0.3.2/scrypted-0.3.2.tgz
     version: 0.3.2
 generated: "2023-12-02T03:15:19.509164662Z"
