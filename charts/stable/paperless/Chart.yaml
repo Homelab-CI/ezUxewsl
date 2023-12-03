@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 2.0.1
 description: Paperless - Index and archive all of your scanned paper documents
 name: paperless
-version: 9.1.5
+version: 9.1.6
 kubeVersion: ">=1.16.0-0"
 keywords:
   - paperless
