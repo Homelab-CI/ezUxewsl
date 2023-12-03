@@ -11,6 +11,48 @@ entries:
           description: Upgraded `common` chart dependency to version 4.5.2
     apiVersion: v2
     appVersion: 2.0.1
+    created: "2023-12-03T00:26:02.012626388Z"
+    dependencies:
+    - name: common
+      repository: https://homelab-ci.github.io/library-ezUxewsl
+      version: 4.5.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.6.12
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.13.1
+    description: Paperless - Index and archive all of your scanned paper documents
+    digest: a929e1deebd43e23a8fcc5cf83f43bc4f998228675adfe9847a81416d0461c32
+    home: https://github.com/homelab-ci/ezUxewsl/tree/master/charts/stable/paperless
+    icon: https://avatars.githubusercontent.com/u/47271576?s=200&v=4
+    keywords:
+    - paperless
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - name: mr-onion-2
+    - email: jonathan@jonnobrow.co.uk
+      name: jonnobrow
+    - email: charts@mor.re
+      name: morremeyer
+    name: paperless
+    sources:
+    - https://github.com/paperless-ngx/paperless-ngx
+    urls:
+    - https://github.com/Homelab-CI/ezUxewsl/releases/download/paperless-9.1.6/paperless-9.1.6.tgz
+    version: 9.1.6
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Bumped app version to 2.0.1
+        - kind: changed
+          description: Bumped app version to 2.0.0
+        - kind: changed
+          description: Upgraded `common` chart dependency to version 4.5.2
+    apiVersion: v2
+    appVersion: 2.0.1
     created: "2023-12-02T03:15:19.383373801Z"
     dependencies:
     - name: common
@@ -129,6 +171,35 @@ entries:
         4.5.2"
     apiVersion: v2
     appVersion: 0.0.138
+    created: "2023-12-03T00:26:02.13676085Z"
+    dependencies:
+    - name: common
+      repository: https://homelab-ci.github.io/library-ezUxewsl
+      version: 4.5.2
+    description: scrypted helm package
+    digest: c28822d0acbdbc8530b0d6e0742d8c2551b3b768f152e9e6ba8b6818596c4ddf
+    home: https://github.com/homelab-ci/ezUxewsl/tree/master/charts/stable/scrypted
+    icon: https://raw.githubusercontent.com/koush/scrypted/main/install/logo.png
+    keywords:
+    - scrypted
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: koush@scrypted.com
+      name: scrypted
+    name: scrypted
+    sources:
+    - https://github.com/koush/scrypted
+    type: application
+    urls:
+    - https://github.com/Homelab-CI/ezUxewsl/releases/download/scrypted-0.3.6/scrypted-0.3.6.tgz
+    version: 0.3.6
+  - annotations:
+      artifacthub.io/changes: "- kind: changed\n  description: Bumped app version
+        to 0.3.4  \n- kind: changed\n  description: Bumped app version to 0.3.3        \n-
+        kind: changed\n  description: Upgraded `common` chart dependency to version
+        4.5.2"
+    apiVersion: v2
+    appVersion: 0.0.138
     created: "2023-12-02T03:15:19.509141779Z"
     dependencies:
     - name: common
@@ -236,4 +307,4 @@ entries:
     urls:
     - https://github.com/homelab-ci/charts/releases/download/scrypted-0.3.2/scrypted-0.3.2.tgz
     version: 0.3.2
-generated: "2023-12-02T03:15:19.509164662Z"
+generated: "2023-12-03T00:26:02.136797349Z"
