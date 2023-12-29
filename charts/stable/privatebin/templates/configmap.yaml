@@ -19,7 +19,7 @@ data:
     {{ end }}
 
     {{- range $key, $val := .Values.config.main }}
-    {{ $key }}= {{ $val }}
+    {{ $key }}= {{ $val | toRawJson }}
     {{- end }}
 
     [expire]
