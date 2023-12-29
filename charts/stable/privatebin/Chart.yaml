@@ -8,7 +8,7 @@ kubeVersion: ">=1.16.0-0"
 keywords:
   - privatebin
   - pastebin
-home: https://github.com/k8s-at-home/charts/tree/master/charts/incubator/privatebin
+home: https://github.com/homelab-ci/charts/tree/master/charts/stable/privatebin
 icon: https://privatebin.info/theme/img/icon.svg
 sources:
   - https://github.com/PrivateBin/PrivateBin
@@ -18,7 +18,7 @@ maintainers:
     email: psych0d0g@users.noreply.github.com
 dependencies:
   - name: common
-    repository: https://library-charts.k8s-at-home.com
+    repository: https://homelab-ci.com/library-charts
     version: 4.5.2
   - name: postgresql
     version: 11.6.12
