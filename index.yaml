@@ -170,6 +170,40 @@ entries:
           description: Upgraded `common` chart dependency to version 4.5.2
     apiVersion: v2
     appVersion: 1.3.5
+    created: "2023-12-29T17:06:52.093445996Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.6.12
+    description: A minimalist, open source online pastebin running on an Nginx, php-fpm
+      & Alpine Linux stack
+    digest: eb8601e726b35c1fca5c5e4d15581f086c104a8de78a43d6a91a46d5b5517fa2
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/incubator/privatebin
+    icon: https://privatebin.info/theme/img/icon.svg
+    keywords:
+    - privatebin
+    - pastebin
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: psych0d0g@users.noreply.github.com
+      name: psych0d0g
+    name: privatebin
+    sources:
+    - https://github.com/PrivateBin/PrivateBin
+    - https://github.com/PrivateBin/docker-nginx-fpm-alpine
+    urls:
+    - https://github.com/Homelab-CI/ezUxewsl/releases/download/privatebin-2.1.4/privatebin-2.1.4.tgz
+    version: 2.1.4
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgraded `common` chart dependency to version 4.5.2
+    apiVersion: v2
+    appVersion: 1.3.5
     created: "2023-12-29T16:58:12.784596043Z"
     dependencies:
     - name: common
@@ -376,4 +410,4 @@ entries:
     urls:
     - https://github.com/homelab-ci/charts/releases/download/scrypted-0.3.2/scrypted-0.3.2.tgz
     version: 0.3.2
-generated: "2023-12-29T16:58:12.784615108Z"
+generated: "2023-12-29T17:06:52.09348026Z"
