@@ -1,0 +1,27 @@
+---
+apiVersion: v2
+appVersion: 4.0.0
+description: Ryot - Roll your own tracker
+name: ryot
+version: 0.0.1
+kubeVersion: ">=1.16.0-0"
+keywords:
+  - ryot
+home: https://github.com/homelab-ci/ezUxewsl/tree/master/charts/stable/ryot
+icon: https://raw.githubusercontent.com/IgnisDa/ryot/main/apps/frontend/public/icon-512x512.png
+sources:
+  - https://github.com/ignisda/ryot
+maintainers:
+  - name: IgnisDa
+dependencies:
+  - name: common
+    repository: https://homelab-ci.github.io/library-ezUxewsl
+    version: 4.5.2
+  - name: postgresql
+    version: 11.6.12
+    repository: https://charts.bitnami.com/bitnami
+    condition: postgresql.enabled
+annotations:
+  artifacthub.io/changes: |-
+    - kind: Added
+      description: Initial application at 4.0.0
