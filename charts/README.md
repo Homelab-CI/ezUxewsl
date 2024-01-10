@@ -8,3 +8,4 @@
 ### Incubator charts:
 | Chart | Description |
 | ----- | ----------- |
+| [ryot](incubator/ryot) | Ryot - Roll your own tracker |
