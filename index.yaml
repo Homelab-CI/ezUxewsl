@@ -266,6 +266,37 @@ entries:
     urls:
     - https://github.com/Homelab-CI/ezUxewsl/releases/download/privatebin-2.1.2/privatebin-2.1.2.tgz
     version: 2.1.2
+  ryot:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: Added
+          description: Initial application at 4.0.0
+    apiVersion: v2
+    appVersion: 4.0.0
+    created: "2024-01-10T15:18:51.898455165Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.6.12
+    description: Ryot - Roll your own tracker
+    digest: 89218a4945154d3cabad4e35c09eb73da0a638de27975ba5706ffa9526fc387e
+    home: https://github.com/homelab-ci/ezUxewsl/tree/master/charts/stable/ryot
+    icon: https://raw.githubusercontent.com/IgnisDa/ryot/main/apps/frontend/public/icon-512x512.png
+    keywords:
+    - ryot
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - name: IgnisDa
+    name: ryot
+    sources:
+    - https://github.com/ignisda/ryot
+    urls:
+    - https://github.com/Homelab-CI/ezUxewsl/releases/download/ryot-0.0.1/ryot-0.0.1.tgz
+    version: 0.0.1
   scrypted:
   - annotations:
       artifacthub.io/changes: "- kind: changed\n  description: Bumped app version
@@ -410,4 +441,4 @@ entries:
     urls:
     - https://github.com/homelab-ci/charts/releases/download/scrypted-0.3.2/scrypted-0.3.2.tgz
     version: 0.3.2
-generated: "2023-12-29T17:06:52.09348026Z"
+generated: "2024-01-10T15:18:51.898481875Z"
