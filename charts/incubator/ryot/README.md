@@ -1,6 +1,6 @@
 # ryot
 
-![Version: 0.0.1](https://img.shields.io/badge/Version-9.1.3-informational?style=flat-square) ![AppVersion: 4.0.0](https://img.shields.io/badge/AppVersion-1.8.0-informational?style=flat-square)
+![Version: 0.0.2](https://img.shields.io/badge/Version-0.0.2-informational?style=flat-square) ![AppVersion: 4.1.0](https://img.shields.io/badge/AppVersion-4.1.0-informational?style=flat-square)
 
 Ryot - Roll your own tracker
 
@@ -8,7 +8,7 @@ Ryot - Roll your own tracker
 
 ## Source Code
 
-* <https://github.com/IgnisDa/ryot>
+* <https://github.com/ignisda/ryot>
 
 ## Requirements
 
@@ -16,10 +16,10 @@ Kubernetes: `>=1.16.0-0`
 
 ## Dependencies
 
-| Repository                            | Name | Version |
-|---------------------------------------|------|---------|
-| https://charts.bitnami.com/bitnami    | postgresql | 11.6.12 |
-| https://homelab-ci.github.io/library-ezUxewsl | common | 4.5.2 |
+| Repository | Name | Version |
+|------------|------|---------|
+| https://charts.bitnami.com/bitnami | postgresql | 11.6.12 |
+| https://library-charts.k8s-at-home.com | common | 4.5.2 |
 
 ## TL;DR
 
@@ -50,7 +50,7 @@ The command removes all the Kubernetes components associated with the chart **in
 ## Configuration
 
 Read through the [values.yaml](./values.yaml) file. It has several commented out suggested values.
-Other values may be used from the [values.yaml](https://github.com/homelab-ci/library-ezUxewsl/tree/main/charts/stable/common/values.yaml) from the [common library](https://github.com/homelab-ci/library-ezUxewsl/tree/main/charts/stable/common).
+Other values may be used from the [values.yaml](https://github.com/homelab-ci/library-charts/tree/main/charts/stable/common/values.yaml) from the [common library](https://github.com/homelab-ci/library-charts/tree/main/charts/stable/common).
 
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`.
 
@@ -71,46 +71,23 @@ N/A
 
 ## Values
 
-**Important**: When deploying an application Helm chart you can add more values from our common library chart [here](https://github.com/homelab-ci/library-ezUxewsl/tree/main/charts/stable/common)
+**Important**: When deploying an application Helm chart you can add more values from our common library chart [here](https://github.com/homelab-ci/library-charts/tree/main/charts/stable/common)
 
-| Key                    | Type | Default                                                                                                                                                                                                 | Description |
-|------------------------|------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| env                    | object | See below                                                                                                                                                                                               | See the following files for additional environment variables: https://ignisda.github.io/ryot/configuration.html |
-| env.DATABASE_URL       | string | `"postgres://{{ .Values.postgresql.auth.username }}:{{ .Values.postgresql.auth.password }}@{{ include \"common.names.fullname\" .}}-postgresql/{{ .Values.postgresql.auth.database }}?sslmode=disable"` | Postgresql connection parameters. See [lib/pq](https://pkg.go.dev/github.com/lib/pq#hdr-Connection_String_Parameters) for more details. |
-| image.pullPolicy       | string | `"IfNotPresent"`                                                                                                                                                                                        | image pull policy |
-| image.repository       | string | `"ghcr.io/ignisda/ryot"`                                                                                                                                                                                | image repository |
-| image.tag              | string | `latest`                                                                                                                                                                                                | image tag |
-| ingress.main           | object | See values.yaml                                                                                                                                                                                         | Enable and configure ingress settings for the chart under this key. |
-| postgresql             | object | See values.yaml                                                                                                                                                                                         | Enable and configure postgresql database subchart under this key.    For more options see [postgresql chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/postgresql) |
-| postgresql.persistence | object | See values.yaml                                                                                                                                                                                         | Enable and configure postgresql database subchart under this key.    For more options see [postgresql chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/postgresql) |
-| service                | object | See values.yaml                                                                                                                                                                                         | Configures service settings for the chart. |
+| Key | Type | Default | Description |
+|-----|------|---------|-------------|
+| env | object | See below | See the following files for additional environment variables: https://ignisda.github.io/ryot/configuration.html |
+| env.DATABASE_URL | string | `"postgres://{{ .Values.postgresql.auth.username }}:{{ .Values.postgresql.auth.password }}@{{ include \"common.names.fullname\" .}}-postgresql/{{ .Values.postgresql.auth.database }}"` | Project name |
+| image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
+| image.repository | string | `"ghcr.io/ignisda/ryot"` | image repository |
+| image.tag | string | chart.appVersion | image tag |
+| ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
+| postgresql | object | See values.yaml | Enable and configure postgresql database subchart under this key.    For more options see [postgresql chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/postgresql) |
+| postgresql.auth.database | string | `"ryot"` | Postgres database |
+| postgresql.auth.password | string | `"ryot"` | Postgres database password |
+| postgresql.auth.username | string | `"ryot"` | Postgres database user name |
+| service | object | See values.yaml | Configures service settings for the chart. |
 
 ## Changelog
 
-### Version 0.0.1
+### Version 0.0.2
 
-#### Added
-
-N/A
-
-#### Changed
-
-N/A
-
-#### Fixed
-
-N/A
-
-### Older versions
-
-A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/homelab-ci/ryot?modal=changelog)
-
-## Support
-
-- See the [Docs](https://docs.homelab-ci.com/our-helm-charts/getting-started/)
-- Open an [issue](https://github.com/homelab-ci/charts/issues/new/choose)
-- Ask a [question](https://github.com/homelab-ci/organization/discussions)
-- Join our [Discord](https://discord.gg/sTMX7Vh) community
-
-----------------------------------------------
-Autogenerated from chart metadata using [helm-docs v0.1.1](https://github.com/homelab-ci/helm-docs/releases/v0.1.1)
