@@ -117,7 +117,7 @@ helm install {{ template "chart.name" . }} {{ template "custom.helm.path" . }} -
     {{- print "#### " ($changeType | title)  | nindent 0  }}
     {{- print "" | nindent 0  }}
     {{- $changesFound := false }}
-    {{- $changes := ((print "changes:\n" .) | fromYaml).changes }}
+    {{- $changes := (print "changes:\n" .).changes }}
     {{- range $changes }}
       {{- if eq .kind $changeType }}
         {{- print "* " .description  | nindent 0 }}
