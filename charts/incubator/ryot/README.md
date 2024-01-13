@@ -77,7 +77,7 @@ N/A
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
 | env | object | See below | See the following files for additional environment variables: https://ignisda.github.io/ryot/configuration.html |
-| env.DATABASE_URL | string | `"postgres://{{ .Values.postgresql.auth.username }}:{{ .Values.postgresql.auth.password }}@{{ include \"common.names.fullname\" .}}-postgresql/{{ .Values.postgresql.auth.database }}"` | Project name |
+| env.DATABASE_URL | string | See values.yaml | Database URL |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"ghcr.io/ignisda/ryot"` | image repository |
 | image.tag | string | chart.appVersion | image tag |
@@ -90,7 +90,7 @@ N/A
 
 ### Older versions
 
-A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/homelab-ci/ryot?modal=changelog)
+A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/homelabcihelmchartstest/ryot?modal=changelog)
 
 ## Support
 
