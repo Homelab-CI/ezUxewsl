@@ -4,7 +4,7 @@ appVersion: 0.0.138
 description: scrypted helm package
 name: scrypted
 type: application
-version: 0.3.6
+version: 0.3.7
 kubeVersion: ">=1.16.0-0"
 keywords:
   - scrypted

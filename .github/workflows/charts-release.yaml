@@ -47,8 +47,8 @@ jobs:
 
         # Uses helm-docs to generate a readme based on a chart's values.yaml using the README template located in /hack/templates/README.md.gotmpl
       - name: Generate README for changed charts
-#        if: |
-#          steps.collect-changes.outputs.changesDetected == 'true'
+        if: |
+          steps.collect-changes.outputs.changesDetected == 'true'
         run: |
           CHARTS=(${{ steps.collect-changes.outputs.addedOrModifiedCharts }})
           for i in "${CHARTS[@]}"
