@@ -1,6 +1,6 @@
 # ryot
 
-![Version: 0.0.2](https://img.shields.io/badge/Version-0.0.2-informational?style=flat-square) ![AppVersion: 4.1.0](https://img.shields.io/badge/AppVersion-4.1.0-informational?style=flat-square)
+![Version: 0.0.3](https://img.shields.io/badge/Version-0.0.3-informational?style=flat-square) ![AppVersion: 4.1.0](https://img.shields.io/badge/AppVersion-4.1.0-informational?style=flat-square)
 
 Ryot - Roll your own tracker
 
@@ -89,5 +89,5 @@ N/A
 
 ## Changelog
 
-### Version 0.0.2
+### Version 0.0.3
 
