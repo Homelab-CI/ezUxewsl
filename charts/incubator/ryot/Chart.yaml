@@ -1,6 +1,6 @@
 ---
 apiVersion: v2
-appVersion: 4.0.0
+appVersion: 4.1.0
 description: Ryot - Roll your own tracker
 name: ryot
 version: 0.0.1
@@ -23,5 +23,7 @@ dependencies:
     condition: postgresql.enabled
 annotations:
   artifacthub.io/changes: |-
+    - kind: Changed
+      description: Bumped application to 4.1.0
     - kind: Added
       description: Initial application at 4.0.0
