@@ -12,13 +12,14 @@ image:
   pullPolicy: IfNotPresent
   # -- image tag
   # @default -- chart.appVersion
-  tag: latest
+  tag:
 
 # -- See the following files for additional environment variables:
 # https://ignisda.github.io/ryot/configuration.html
 # @default -- See below
 env:
-  # -- Project name
+  # -- Database URL
+  # @default -- See values.yaml
   DATABASE_URL: postgres://{{ .Values.postgresql.auth.username }}:{{ .Values.postgresql.auth.password }}@{{ include "common.names.fullname" .}}-postgresql/{{ .Values.postgresql.auth.database }}
 
 # -- Configures service settings for the chart.

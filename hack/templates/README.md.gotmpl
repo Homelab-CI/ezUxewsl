@@ -133,7 +133,8 @@ helm install {{ template "chart.name" . }} {{ template "custom.helm.path" . }} -
 
 ### Older versions
 
-A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/homelab-ci/{{- template "chart.name" . }}?modal=changelog)
+{{/*  TODO: The below artifact hub url needs to be updated*/}}
+A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/homelabcihelmchartstest/{{- template "chart.name" . }}?modal=changelog)
 
 {{- end -}}
 
