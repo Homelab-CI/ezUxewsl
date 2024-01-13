@@ -15,7 +15,7 @@ maintainers:
   - name: IgnisDa
 dependencies:
   - name: common
-    repository: https://library-charts.k8s-at-home.com # TODO: Update
+    repository: https://homelab-ci.github.io/library-ezUxewsl
     version: 4.5.2
   - name: postgresql
     version: 11.6.12
