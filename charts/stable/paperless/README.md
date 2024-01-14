@@ -97,7 +97,7 @@ N/A
 
 ### Older versions
 
-A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/homelab-ci/paperless?modal=changelog)
+A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/homelabcihelmchartstest/paperless?modal=changelog)
 
 ## Support
 
