@@ -25,6 +25,6 @@ excluded-charts:
   - charts/stable/wireguard
 chart-repos:
   - bitnami=https://charts.bitnami.com/bitnami
-  - homelab-ci-libraries=https://homelab-ci.github.io/library-ezUxewsl
+  - homelab-ci-libraries=https://homelab-ci.github.io/ezUxewsl
   - homelab-ci=https://homelab-ci.github.io/ezUxewsl
   - jetstack=https://charts.jetstack.io

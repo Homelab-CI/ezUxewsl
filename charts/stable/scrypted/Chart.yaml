@@ -17,7 +17,7 @@ maintainers:
     email: koush@scrypted.com
 dependencies:
   - name: common
-    repository: https://homelab-ci.github.io/library-ezUxewsl
+    repository: https://homelab-ci.github.io/ezUxewsl
     version: 4.5.2
 annotations:
   artifacthub.io/changes: |-
