@@ -1,0 +1,7 @@
+{
+  "name": "homelab-ci/ezUxewsl",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "init": true // https://docs.docker.com/engine/reference/run/#specify-an-init-process
+}
