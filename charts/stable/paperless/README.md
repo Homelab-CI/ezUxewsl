@@ -20,7 +20,7 @@ Kubernetes: `>=1.16.0-0`
 |------------|------|---------|
 | https://charts.bitnami.com/bitnami | postgresql | 11.6.12 |
 | https://charts.bitnami.com/bitnami | redis | 16.13.1 |
-| https://homelab-ci.github.io/ezUxewsl | common | 4.5.2 |
+| https://homelab-ci.github.io/library-ezUxewsl | common | 4.5.2 |
 
 ## TL;DR
 

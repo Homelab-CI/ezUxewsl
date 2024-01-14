@@ -19,7 +19,7 @@ Kubernetes: `>=1.16.0-0`
 | Repository | Name | Version |
 |------------|------|---------|
 | https://charts.bitnami.com/bitnami | postgresql | 11.6.12 |
-| https://homelab-ci.github.io/ezUxewsl | common | 4.5.2 |
+| https://homelab-ci.github.io/library-ezUxewsl | common | 4.5.2 |
 
 ## TL;DR
 
