@@ -1,10 +1,6 @@
 {
   "enabled": true,
   "dependencyDashboard": true,
-  "assigneesFromCodeOwners": true,
-  "reviewersFromCodeOwners": true,
-  "suppressNotifications": ["prIgnoreNotification"],
-  "prConcurrentLimit": 5,
   "helmv3": {
     "fileMatch": ["charts/.+/Chart\\.yaml$"]
   },
