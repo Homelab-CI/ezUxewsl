@@ -90,7 +90,7 @@ jobs:
           git config user.name "homelab-ci[bot]"
           git config user.email "homelab-ci[bot]@users.noreply.github.com"
 
-        # Releases the chart to ghpages
+        # Releases the chart to the gh-pages branch
       - name: Run chart-releaser
         uses: helm/chart-releaser-action@v1.6.0
         with:
