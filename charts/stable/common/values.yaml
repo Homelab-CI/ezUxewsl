@@ -3,9 +3,9 @@ global:
   nameOverride:
   # -- Set the entire name definition
   fullnameOverride:
-  # -- Set additional global labels. Helm helm-docs can be used.
+  # -- Set additional global labels. Helm templates can be used.
   labels: {}
-  # -- Set additional global annotations. Helm helm-docs can be used.
+  # -- Set additional global annotations. Helm templates can be used.
   annotations: {}
 
 controller:
@@ -170,11 +170,11 @@ securityContext: {}
 lifecycle: {}
 
 # -- Specify any initContainers here as dictionary items. Each initContainer should have its own key.
-# The dictionary item key will determine the order. Helm helm-docs can be used.
+# The dictionary item key will determine the order. Helm templates can be used.
 initContainers: {}
 
 # -- Specify any additional containers here as dictionary items. Each additional container should have its own key.
-# Helm helm-docs can be used.
+# Helm templates can be used.
 additionalContainers: {}
 
 # -- Probe configuration

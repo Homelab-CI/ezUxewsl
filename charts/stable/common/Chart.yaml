@@ -2,7 +2,7 @@ apiVersion: v2
 name: common
 description: Function library for homelab-ci charts
 type: library
-version: 4.5.3
+version: 4.5.2
 kubeVersion: ">=1.16.0-0"
 keywords:
   - homelab-ci
