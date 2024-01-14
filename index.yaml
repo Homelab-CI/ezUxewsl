@@ -46,6 +46,48 @@ entries:
           description: Upgraded `common` chart dependency to version 4.5.2
     apiVersion: v2
     appVersion: 2.0.1
+    created: "2024-01-14T21:41:30.847405504Z"
+    dependencies:
+    - name: common
+      repository: https://homelab-ci.github.io/ezUxewsl
+      version: 4.5.3
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.6.12
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.13.1
+    description: Paperless - Index and archive all of your scanned paper documents
+    digest: a3c9c02e3b5bc4453c52be0b90d017cd21d6d69e8553e2b5e7491e4d22f5345c
+    home: https://github.com/homelab-ci/ezUxewsl/tree/master/charts/stable/paperless
+    icon: https://avatars.githubusercontent.com/u/47271576?s=200&v=4
+    keywords:
+    - paperless
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - name: mr-onion-2
+    - email: jonathan@jonnobrow.co.uk
+      name: jonnobrow
+    - email: charts@mor.re
+      name: morremeyer
+    name: paperless
+    sources:
+    - https://github.com/paperless-ngx/paperless-ngx
+    urls:
+    - https://github.com/Homelab-CI/ezUxewsl/releases/download/paperless-9.1.8/paperless-9.1.8.tgz
+    version: 9.1.8
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Bumped app version to 2.0.1
+        - kind: changed
+          description: Bumped app version to 2.0.0
+        - kind: changed
+          description: Upgraded `common` chart dependency to version 4.5.2
+    apiVersion: v2
+    appVersion: 2.0.1
     created: "2024-01-13T23:05:56.706459957Z"
     dependencies:
     - name: common
@@ -249,6 +291,42 @@ entries:
           description: Upgraded `common` chart dependency to version 4.5.2
     apiVersion: v2
     appVersion: 1.3.5
+    created: "2024-01-14T21:41:30.971688366Z"
+    dependencies:
+    - name: common
+      repository: https://homelab-ci.github.io/ezUxewsl
+      version: 4.5.3
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.6.12
+    description: A minimalist, open source online pastebin running on an Nginx, php-fpm
+      & Alpine Linux stack
+    digest: 9a73822a493c10ce51044bffe46e2693a378d2d9fa33e5abcc8252ef1bc07a28
+    home: https://github.com/homelab-ci/ezUxewsl/tree/master/charts/stable/privatebin
+    icon: https://privatebin.info/theme/img/icon.svg
+    keywords:
+    - privatebin
+    - pastebin
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: psych0d0g@users.noreply.github.com
+      name: psych0d0g
+    name: privatebin
+    sources:
+    - https://github.com/PrivateBin/PrivateBin
+    - https://github.com/PrivateBin/docker-nginx-fpm-alpine
+    urls:
+    - https://github.com/Homelab-CI/ezUxewsl/releases/download/privatebin-2.1.6/privatebin-2.1.6.tgz
+    version: 2.1.6
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Updated configmap to use `toRawJson` function to fix `&` being converted to unicode
+        - kind: changed
+          description: Upgraded `common` chart dependency to version 4.5.2
+    apiVersion: v2
+    appVersion: 1.3.5
     created: "2024-01-13T23:05:56.910356016Z"
     dependencies:
     - name: common
@@ -388,6 +466,38 @@ entries:
           description: Initial application at 4.0.0
     apiVersion: v2
     appVersion: 4.1.0
+    created: "2024-01-14T21:41:31.079653525Z"
+    dependencies:
+    - name: common
+      repository: https://homelab-ci.github.io/ezUxewsl
+      version: 4.5.3
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.6.12
+    description: Ryot - Roll your own tracker
+    digest: 1a574654fcb31c51f92769d28fa833baa53140b9b6509d30d1cd26084cdafb35
+    home: https://github.com/homelab-ci/ezUxewsl/tree/master/charts/stable/ryot
+    icon: https://raw.githubusercontent.com/IgnisDa/ryot/main/apps/frontend/public/icon-512x512.png
+    keywords:
+    - ryot
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - name: IgnisDa
+    name: ryot
+    sources:
+    - https://github.com/ignisda/ryot
+    urls:
+    - https://github.com/Homelab-CI/ezUxewsl/releases/download/ryot-0.0.4/ryot-0.0.4.tgz
+    version: 0.0.4
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: Changed
+          description: Bumped application to 4.1.0
+        - kind: Added
+          description: Initial application at 4.0.0
+    apiVersion: v2
+    appVersion: 4.1.0
     created: "2024-01-13T23:05:57.128575398Z"
     dependencies:
     - name: common
@@ -475,6 +585,38 @@ entries:
     - https://github.com/Homelab-CI/ezUxewsl/releases/download/ryot-0.0.1/ryot-0.0.1.tgz
     version: 0.0.1
   scrypted:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Bumped app version to 0.3.4
+        - kind: changed
+          description: Bumped app version to 0.3.3
+        - kind: changed
+          description: Upgraded `common` chart dependency to version 4.5.2
+    apiVersion: v2
+    appVersion: 0.0.138
+    created: "2024-01-14T21:41:31.178084243Z"
+    dependencies:
+    - name: common
+      repository: https://homelab-ci.github.io/ezUxewsl
+      version: 4.5.3
+    description: scrypted helm package
+    digest: edd2657bda781095eabdba822b4d65e64cfbcfd738ec1cefae8b7504c3f32d64
+    home: https://github.com/homelab-ci/ezUxewsl/tree/master/charts/stable/scrypted
+    icon: https://raw.githubusercontent.com/koush/scrypted/main/install/logo.png
+    keywords:
+    - scrypted
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: koush@scrypted.com
+      name: scrypted
+    name: scrypted
+    sources:
+    - https://github.com/koush/scrypted
+    type: application
+    urls:
+    - https://github.com/Homelab-CI/ezUxewsl/releases/download/scrypted-0.3.8/scrypted-0.3.8.tgz
+    version: 0.3.8
   - annotations:
       artifacthub.io/changes: "- kind: changed\n  description: Bumped app version
         to 0.3.4  \n- kind: changed\n  description: Bumped app version to 0.3.3        \n-
@@ -647,4 +789,4 @@ entries:
     urls:
     - https://github.com/homelab-ci/charts/releases/download/scrypted-0.3.2/scrypted-0.3.2.tgz
     version: 0.3.2
-generated: "2024-01-14T20:49:46.65408887Z"
+generated: "2024-01-14T21:41:31.17814721Z"
