@@ -95,7 +95,6 @@ jobs:
         uses: helm/chart-releaser-action@v1.6.0
         with:
           charts_dir: charts/*
-          charts_repo_url: https://homelab-ci.github.io/ezUxewsl/
         env:
           CR_TOKEN: "${{ steps.generate-token.outputs.token }}"
           CR_SKIP_EXISTING: "true"
