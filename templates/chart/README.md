@@ -18,7 +18,7 @@ Kubernetes: `>=1.16.0-0`
 
 | Repository                            | Name | Version |
 |---------------------------------------|------|---------|
-| https://homelab-ci.github.io/library-ezUxewsl | common | 4.0.0 |
+| https://homelab-ci.github.io/ezUxewsl | common | 4.0.0 |
 
 ## TL;DR
 
