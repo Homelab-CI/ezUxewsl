@@ -1,5 +1,5 @@
 {{/*
-Main entrypoint for the common library chart. It will render all underlying templates based on the provided values.
+Main entrypoint for the common library chart. It will render all underlying helm-docs based on the provided values.
 */}}
 {{- define "common.all" -}}
   {{- /* Merge the local chart values and the common chart defaults */ -}}
@@ -27,7 +27,7 @@ Main entrypoint for the common library chart. It will render all underlying temp
 
   {{ include "common.configmap" . | nindent 0 }}
 
-  {{- /* Build the templates */ -}}
+  {{- /* Build the helm-docs */ -}}
   {{- include "common.pvc" . }}
 
   {{- if .Values.serviceAccount.create -}}

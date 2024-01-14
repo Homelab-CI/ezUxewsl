@@ -1,6 +1,6 @@
 {{/*
 Template to render VPN addon
-It will include / inject the required templates based on the given values.
+It will include / inject the required helm-docs based on the given values.
 */}}
 {{- define "common.addon.vpn" -}}
 {{- if .Values.addons.vpn.enabled -}}
