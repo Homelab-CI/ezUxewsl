@@ -5,9 +5,6 @@
   "reviewersFromCodeOwners": true,
   "suppressNotifications": ["prIgnoreNotification"],
   "prConcurrentLimit": 5,
-  "helm-values": {
-    "enabled": false
-  },
   "helmv3": {
     "fileMatch": ["charts/.+/Chart\\.yaml$"]
   },
