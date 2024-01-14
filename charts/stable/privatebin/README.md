@@ -1,6 +1,6 @@
 # privatebin
 
-![Version: 2.1.5](https://img.shields.io/badge/Version-2.1.5-informational?style=flat-square) ![AppVersion: 1.3.5](https://img.shields.io/badge/AppVersion-1.3.5-informational?style=flat-square)
+![Version: 2.1.6](https://img.shields.io/badge/Version-2.1.6-informational?style=flat-square) ![AppVersion: 1.3.5](https://img.shields.io/badge/AppVersion-1.3.5-informational?style=flat-square)
 
 A minimalist, open source online pastebin running on an Nginx, php-fpm & Alpine Linux stack
 
@@ -20,7 +20,7 @@ Kubernetes: `>=1.16.0-0`
 | Repository | Name | Version |
 |------------|------|---------|
 | https://charts.bitnami.com/bitnami | postgresql | 11.6.12 |
-| https://homelab-ci.github.io/ezUxewsl | common | 4.5.2 |
+| https://homelab-ci.github.io/ezUxewsl | common | 4.5.3 |
 
 ## TL;DR
 
