@@ -35,6 +35,23 @@ entries:
     urls:
     - https://github.com/Homelab-CI/ezUxewsl/releases/download/common-4.5.2/common-4.5.2.tgz
     version: 4.5.2
+  - apiVersion: v2
+    created: "2024-01-15T19:42:54.858078643Z"
+    description: Function library for homelab-ci charts
+    digest: eefc7b0b4781898773bf5c351e1e984d601d7d32380b50614580747f56ec4c85
+    home: https://github.com/homelab-ci/ezUxewsl/tree/master/stable/common
+    keywords:
+    - homelab-ci
+    - common
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: hello@scottswensen.com
+      name: sswensen
+    name: common
+    type: library
+    urls:
+    - https://github.com/Homelab-CI/ezUxewsl/releases/download/common-0.0.1/common-0.0.1.tgz
+    version: 0.0.1
   paperless:
   - annotations:
       artifacthub.io/changes: |-
@@ -789,4 +806,4 @@ entries:
     urls:
     - https://github.com/homelab-ci/charts/releases/download/scrypted-0.3.2/scrypted-0.3.2.tgz
     version: 0.3.2
-generated: "2024-01-14T21:41:31.17814721Z"
+generated: "2024-01-15T19:42:54.858135911Z"
