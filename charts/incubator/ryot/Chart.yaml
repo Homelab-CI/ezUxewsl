@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 4.1.0
 description: Ryot - Roll your own tracker
 name: ryot
-version: 0.0.4
+version: 0.0.5
 kubeVersion: ">=1.16.0-0"
 keywords:
   - ryot
@@ -16,13 +16,15 @@ maintainers:
 dependencies:
   - name: common
     repository: https://homelab-ci.github.io/ezUxewsl
-    version: 4.5.3
+    version: 0.0.1
   - name: postgresql
     version: 11.6.12
     repository: https://charts.bitnami.com/bitnami
     condition: postgresql.enabled
 annotations:
   artifacthub.io/changes: |-
+    - kind: changed
+      description: Reset `common` chart dependency to version 0.0.1
     - kind: Changed
       description: Bumped application to 4.1.0
     - kind: Added

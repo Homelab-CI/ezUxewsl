@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 2.0.1
 description: Paperless - Index and archive all of your scanned paper documents
 name: paperless
-version: 9.1.8
+version: 9.1.9
 kubeVersion: ">=1.16.0-0"
 keywords:
   - paperless
@@ -20,7 +20,7 @@ maintainers:
 dependencies:
   - name: common
     repository: https://homelab-ci.github.io/ezUxewsl
-    version: 4.5.3
+    version: 0.0.1
   - name: postgresql
     version: 11.6.12
     repository: https://charts.bitnami.com/bitnami
@@ -31,6 +31,8 @@ dependencies:
     condition: redis.enabled
 annotations:
   artifacthub.io/changes: |-
+    - kind: changed
+      description: Reset `common` chart dependency to version 0.0.1    
     - kind: changed
       description: Bumped app version to 2.0.1
     - kind: changed
