@@ -4,7 +4,7 @@ appVersion: 0.0.138
 description: scrypted helm package
 name: scrypted
 type: application
-version: 0.3.8
+version: 0.3.9
 kubeVersion: ">=1.16.0-0"
 keywords:
   - scrypted
@@ -18,9 +18,11 @@ maintainers:
 dependencies:
   - name: common
     repository: https://homelab-ci.github.io/ezUxewsl
-    version: 4.5.3
+    version: 0.0.1
 annotations:
   artifacthub.io/changes: |-
+    - kind: changed
+      description: Reset `common` chart dependency to version 0.0.1
     - kind: changed
       description: Bumped app version to 0.3.4
     - kind: changed
