@@ -1,6 +1,6 @@
 # scrypted
 
-![Version: 0.3.8](https://img.shields.io/badge/Version-0.3.8-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.0.138](https://img.shields.io/badge/AppVersion-0.0.138-informational?style=flat-square)
+![Version: 0.3.9](https://img.shields.io/badge/Version-0.3.9-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.0.138](https://img.shields.io/badge/AppVersion-0.0.138-informational?style=flat-square)
 
 scrypted helm package
 
@@ -18,7 +18,7 @@ Kubernetes: `>=1.16.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://homelab-ci.github.io/ezUxewsl | common | 4.5.3 |
+| https://homelab-ci.github.io/ezUxewsl | common | 0.0.1 |
 
 ## TL;DR
 
