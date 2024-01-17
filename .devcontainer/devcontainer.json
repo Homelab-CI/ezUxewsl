@@ -12,6 +12,5 @@
       "upgradePackages": "false"
     }
   },
-  "remoteUser": "coder",
-  "init": true // https://docs.docker.com/engine/reference/run/#specify-an-init-process
+  "remoteUser": "coder"
 }
