@@ -3,5 +3,15 @@
   "build": {
     "dockerfile": "Dockerfile"
   },
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "installZsh": "false",
+      "username": "coder",
+      "userUid": "1000",
+      "userGid": "1000",
+      "upgradePackages": "false"
+    }
+  },
+  "remoteUser": "coder",
   "init": true // https://docs.docker.com/engine/reference/run/#specify-an-init-process
 }
