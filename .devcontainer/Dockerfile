@@ -9,7 +9,7 @@ COPY tools/*.sh /usr/local/containerbase/tools/
 ARG CHART_TESTING_VERSION=v3.10.1
 RUN install-tool chart-testing
 
-USER coder
+USER vscode
 
 # renovate: datasource=github-releases depName=kubectl packageName=kubernetes/kubernetes
 ARG KUBECTL_VERSION=v1.29.0
