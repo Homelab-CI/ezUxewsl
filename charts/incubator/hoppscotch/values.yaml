@@ -1,0 +1,77 @@
+#
+# IMPORTANT NOTE
+#
+# This chart inherits from our common library chart. You can check the default values/options here:
+# https://github.com/homelab-ci/ezUxewsl/tree/main/charts/stable/common/values.yaml
+#
+
+image:
+  # -- image repository
+  repository: hoppscotch/hoppscotch
+  # -- image pull policy
+  pullPolicy: IfNotPresent
+  # -- image tag
+  # @default -- chart.appVersion
+  tag:
+
+# -- Configuration for Hoppscotch
+# @default --See below
+hoppscotch:
+  # -- The domain Hoppscotch will be accessed at (e.g. hoppscotch.io)
+  url:
+
+# -- See the following files for additional environment variables:
+# https://docs.hoppscotch.io/documentation/self-host/community-edition/install-and-build#configuring-the-environment
+# @default -- See below
+env:
+  # -- Database URL
+  # @default -- See values.yaml
+  DATABASE_URL: postgres://{{ .Values.postgresql.auth.username }}:{{ .Values.postgresql.auth.password }}@{{ include "common.names.fullname" .}}-postgresql/{{ .Values.postgresql.auth.database }}
+
+  # -- Enable subpath access
+  # @default -- true
+  ENABLE_SUBPATH_BASED_ACCESS: true
+
+
+  WHITELISTED_ORIGINS: https://{{ .Values.hoppscotch.url }},https://{{ .Values.hoppscotch.url }}/admin
+
+  REDIRECT_URL: https://{{ .Values.hoppscotch.url }}
+
+  # Base URL
+  VITE_BASE_URL: https://{{ .Values.hoppscotch.url }}
+  VITE_SHORTCODE_BASE_URL: https://{{ .Values.hoppscotch.url }}
+  VITE_ADMIN_URL: https://{{ .Values.hoppscotch.url }}/admin
+
+  # Backend URLs
+  VITE_BACKEND_GQL_URL: https://{{ .Values.hoppscotch.url }}/backend/graphql
+  VITE_BACKEND_WS_URL: ws://{{ .Values.hoppscotch.url }}/backend/graphql
+  VITE_BACKEND_API_URL: https://{{ .Values.hoppscotch.url }}/backend/v1
+
+# -- Configures service settings for the chart.
+# @default -- See values.yaml
+service:
+  main:
+    ports:
+      http:
+        port: 3080
+
+ingress:
+  # -- Enable and configure ingress settings for the chart under this key.
+  # @default -- See values.yaml
+  main:
+    enabled: false
+
+# -- Enable and configure postgresql database subchart under this key.
+#    For more options see [postgresql chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/postgresql)
+# @default -- See values.yaml
+postgresql:
+  enabled: true
+  auth:
+    # -- Postgres database user name
+    username: hoppscotch
+    # -- Postgres database password
+    password: "hoppscotch"
+    # -- Postgres database
+    database: hoppscotch
+  persistence:
+    enabled: false
