@@ -9,4 +9,5 @@
 ### Incubator charts:
 | Chart | Description |
 | ----- | ----------- |
+| [hoppscotch](incubator/hoppscotch) | Open-source API development ecosystem |
 | [ryot](incubator/ryot) | Ryot - Roll your own tracker |
