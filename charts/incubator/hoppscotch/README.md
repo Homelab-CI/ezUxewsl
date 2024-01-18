@@ -1,14 +1,14 @@
-# ${CHARTNAME}
+# hoppscotch
 
-![Version: 1.0.0](https://img.shields.io/badge/Version-1.0.0-informational?style=flat-square) ![AppVersion: 1.0.0](https://img.shields.io/badge/AppVersion-1.0.0-informational?style=flat-square)
+![Version: 0.0.1](https://img.shields.io/badge/Version-0.0.1-informational?style=flat-square) ![AppVersion: 2023.12.2](https://img.shields.io/badge/AppVersion-2023.12.2-informational?style=flat-square)
 
-${CHARTNAME} helm package
+Open-source API development ecosystem
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/homelab-ci/charts/issues/new/choose)**
 
 ## Source Code
 
-* <https://github.com/${CHARTNAME}/${CHARTNAME}-docker>
+* <https://github.com/hoppscotch/hoppscotch>
 
 ## Requirements
 
@@ -16,32 +16,33 @@ Kubernetes: `>=1.16.0-0`
 
 ## Dependencies
 
-| Repository                            | Name | Version |
-|---------------------------------------|------|---------|
-| https://homelab-ci.github.io/ezUxewsl | common | 4.0.0 |
+| Repository | Name | Version |
+|------------|------|---------|
+| https://charts.bitnami.com/bitnami | postgresql | 11.6.12 |
+| https://homelab-ci.github.io/ezUxewsl | common | 0.0.1 |
 
 ## TL;DR
 
 ```console
 helm repo add homelab-ci https://homelab-ci.com/charts/
 helm repo update
-helm install ${CHARTNAME} homelab-ci/${CHARTNAME}
+helm install hoppscotch homelab-ci/hoppscotch
 ```
 
 ## Installing the Chart
 
-To install the chart with the release name `${CHARTNAME}`
+To install the chart with the release name `hoppscotch`
 
 ```console
-helm install ${CHARTNAME} homelab-ci/${CHARTNAME}
+helm install hoppscotch homelab-ci/hoppscotch
 ```
 
 ## Uninstalling the Chart
 
-To uninstall the `${CHARTNAME}` deployment
+To uninstall the `hoppscotch` deployment
 
 ```console
-helm uninstall ${CHARTNAME}
+helm uninstall hoppscotch
 ```
 
 The command removes all the Kubernetes components associated with the chart **including persistent volumes** and deletes the release.
@@ -54,15 +55,15 @@ Other values may be used from the [values.yaml](https://github.com/homelab-ci/li
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`.
 
 ```console
-helm install ${CHARTNAME} \
+helm install hoppscotch \
   --set env.TZ="America/New York" \
-    homelab-ci/${CHARTNAME}
+    homelab-ci/hoppscotch
 ```
 
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 
 ```console
-helm install ${CHARTNAME} homelab-ci/${CHARTNAME} -f values.yaml
+helm install hoppscotch homelab-ci/hoppscotch -f values.yaml
 ```
 
 ## Custom configuration
@@ -75,30 +76,24 @@ N/A
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
-| env | object | See below | environment variables. See more environment variables in the [${CHARTNAME} documentation](https://${CHARTNAME}.org/docs). |
-| env.TZ | string | `"UTC"` | Set the container timezone |
+| env | object | See below | See the following files for additional environment variables: https://docs.hoppscotch.io/documentation/self-host/community-edition/install-and-build#configuring-the-environment |
+| env.DATABASE_URL | string | See values.yaml | Database URL |
+| env.ENABLE_SUBPATH_BASED_ACCESS | bool | true | Enable subpath access |
+| hoppscotch | object | `{"url":null}` | Configuration for Hoppscotch @default --See below |
+| hoppscotch.url | string | `nil` | The domain Hoppscotch will be accessed at (e.g. hoppscotch.io) |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
-| image.repository | string | `"${CHARTNAME}/${CHARTNAME}"` | image repository |
+| image.repository | string | `"hoppscotch/hoppscotch"` | image repository |
 | image.tag | string | chart.appVersion | image tag |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
-| persistence | object | See values.yaml | Configure persistence settings for the chart under this key. |
+| postgresql | object | See values.yaml | Enable and configure postgresql database subchart under this key.    For more options see [postgresql chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/postgresql) |
+| postgresql.auth.database | string | `"hoppscotch"` | Postgres database |
+| postgresql.auth.password | string | `"hoppscotch"` | Postgres database password |
+| postgresql.auth.username | string | `"hoppscotch"` | Postgres database user name |
 | service | object | See values.yaml | Configures service settings for the chart. |
 
-## Changelog
+### Older versions
 
-### Version 1.0.0
-
-#### Added
-
-- Initial version
-
-#### Changed
-
-N/A
-
-#### Fixed
-
-N/A
+A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/homelabcihelmchartstest/hoppscotch?modal=changelog)
 
 ## Support
 
@@ -108,4 +103,4 @@ N/A
 - Join our [Discord](https://discord.gg/sTMX7Vh) community
 
 ----------------------------------------------
-Autogenerated from chart metadata using [helm-docs v1.5.0](https://github.com/norwoodj/helm-docs/releases/v1.5.0)
+Autogenerated from chart metadata using [helm-docs v1.12.0](https://github.com/norwoodj/helm-docs/releases/v1.12.0)
