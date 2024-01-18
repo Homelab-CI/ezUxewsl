@@ -52,6 +52,38 @@ entries:
     urls:
     - https://github.com/Homelab-CI/ezUxewsl/releases/download/common-0.0.1/common-0.0.1.tgz
     version: 0.0.1
+  hoppscotch:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: Added
+          description: Initial application at 2023.12.2
+    apiVersion: v2
+    appVersion: 2023.12.2
+    created: "2024-01-18T03:53:51.015161121Z"
+    dependencies:
+    - name: common
+      repository: https://homelab-ci.github.io/ezUxewsl
+      version: 0.0.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.6.12
+    description: Open-source API development ecosystem
+    digest: ba85983294594dae29b5bfaf471fd6792aeb8442dfe2e984ceac4a7cd8f77208
+    home: https://github.com/homelab-ci/ezUxewsl/tree/master/charts/stable/hoppscotch
+    icon: https://mintlify.s3-us-west-1.amazonaws.com/hoppscotch/logo/dark.svg
+    keywords:
+    - hoppscotch
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - name: liyasthomas
+    - name: AndrewBastin
+    name: hoppscotch
+    sources:
+    - https://github.com/hoppscotch/hoppscotch
+    urls:
+    - https://github.com/Homelab-CI/ezUxewsl/releases/download/hoppscotch-0.0.1/hoppscotch-0.0.1.tgz
+    version: 0.0.1
   paperless:
   - annotations:
       artifacthub.io/changes: |-
@@ -956,4 +988,4 @@ entries:
     urls:
     - https://github.com/homelab-ci/charts/releases/download/scrypted-0.3.2/scrypted-0.3.2.tgz
     version: 0.3.2
-generated: "2024-01-15T19:45:51.283849516Z"
+generated: "2024-01-18T03:53:51.015205073Z"
