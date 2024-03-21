@@ -10,15 +10,15 @@ data:
   config.yml: |
     frigate:
       {{- range $key, $val := .Values.config.frigate }}
-      {{ $key }}= {{ $val | toRawJson }}
+      {{ $key }}: {{ $val | toRawJson }}
       {{- end }}
 
     classification:
       {{- range $key, $val := .Values.config.classification }}
-      {{ $key }}= {{ $val | toRawJson }}
+      {{ $key }}: {{ $val | toRawJson }}
       {{- end }}
 
     webui:
       {{- range $key, $val := .Values.config.webui }}
-      {{ $key }}= {{ $val | toRawJson }}
+      {{ $key }}: {{ $val | toRawJson }}
       {{- end }}
