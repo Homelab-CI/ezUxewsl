@@ -1,4 +1,4 @@
-# WhosAtMyFeeder
+# whosatmyfeeder
 
 ![Version: 0.0.3](https://img.shields.io/badge/Version-0.0.3-informational?style=flat-square) ![AppVersion: 0.0.1](https://img.shields.io/badge/AppVersion-0.0.1-informational?style=flat-square)
 
@@ -25,23 +25,23 @@ Kubernetes: `>=1.16.0-0`
 ```console
 helm repo add homelab-ci https://homelab-ci.com/charts/
 helm repo update
-helm install WhosAtMyFeeder homelab-ci/WhosAtMyFeeder
+helm install whosatmyfeeder homelab-ci/whosatmyfeeder
 ```
 
 ## Installing the Chart
 
-To install the chart with the release name `WhosAtMyFeeder`
+To install the chart with the release name `whosatmyfeeder`
 
 ```console
-helm install WhosAtMyFeeder homelab-ci/WhosAtMyFeeder
+helm install whosatmyfeeder homelab-ci/whosatmyfeeder
 ```
 
 ## Uninstalling the Chart
 
-To uninstall the `WhosAtMyFeeder` deployment
+To uninstall the `whosatmyfeeder` deployment
 
 ```console
-helm uninstall WhosAtMyFeeder
+helm uninstall whosatmyfeeder
 ```
 
 The command removes all the Kubernetes components associated with the chart **including persistent volumes** and deletes the release.
@@ -54,15 +54,15 @@ Other values may be used from the [values.yaml](https://github.com/homelab-ci/li
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`.
 
 ```console
-helm install WhosAtMyFeeder \
+helm install whosatmyfeeder \
   --set env.TZ="America/New York" \
-    homelab-ci/WhosAtMyFeeder
+    homelab-ci/whosatmyfeeder
 ```
 
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 
 ```console
-helm install WhosAtMyFeeder homelab-ci/WhosAtMyFeeder -f values.yaml
+helm install whosatmyfeeder homelab-ci/whosatmyfeeder -f values.yaml
 ```
 
 ## Custom configuration
@@ -99,7 +99,7 @@ N/A
 
 ### Older versions
 
-A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/homelabcihelmchartstest/WhosAtMyFeeder?modal=changelog)
+A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/homelabcihelmchartstest/whosatmyfeeder?modal=changelog)
 
 ## Support
 
