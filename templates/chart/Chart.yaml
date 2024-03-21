@@ -15,8 +15,8 @@ maintainers:
     email: ${CHARTNAME}@${CHARTNAME}.com
 dependencies:
   - name: common
-    repository: https://homelab-ci.github.io/library-1ezUxewsl
-    version: 4.5.2
+    repository: https://homelab-ci.github.io/ezUxewsl
+    version: 0.0.1
 annotations:
   artifacthub.io/changes: |
     - kind: added
