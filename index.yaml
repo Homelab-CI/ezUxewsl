@@ -9,6 +9,34 @@ entries:
           description: Initial version
     apiVersion: v2
     appVersion: 0.0.1
+    created: "2024-03-21T04:05:30.901551532Z"
+    dependencies:
+    - name: common
+      repository: https://homelab-ci.github.io/ezUxewsl
+      version: 0.0.1
+    description: WhosAtMyFeeder helm package
+    digest: 77c15ef2013d827f90550b6c54eedd66907d0932272d2f62f072f69e7556f2e0
+    home: https://github.com/mmcc-xx/WhosAtMyFeeder
+    keywords:
+    - WhosAtMyFeeder
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: clarkcase@gmail.com
+      name: mmcc-xx
+    name: WhosAtMyFeeder
+    sources:
+    - https://github.com/mmcc-xx/WhosAtMyFeeder
+    urls:
+    - https://github.com/Homelab-CI/ezUxewsl/releases/download/WhosAtMyFeeder-0.0.3/WhosAtMyFeeder-0.0.3.tgz
+    version: 0.0.3
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Added configuration configmap
+        - kind: added
+          description: Initial version
+    apiVersion: v2
+    appVersion: 0.0.1
     created: "2024-03-21T03:57:21.467468995Z"
     dependencies:
     - name: common
@@ -1076,4 +1104,4 @@ entries:
     urls:
     - https://github.com/homelab-ci/charts/releases/download/scrypted-0.3.2/scrypted-0.3.2.tgz
     version: 0.3.2
-generated: "2024-03-21T03:57:21.467521352Z"
+generated: "2024-03-21T04:05:30.901636273Z"
