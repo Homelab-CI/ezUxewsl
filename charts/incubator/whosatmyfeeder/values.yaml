@@ -26,8 +26,8 @@ service:
   main:
     ports:
       http:
-        port: "{{ .Values.config.webui.port }}"
-
+#        port: "{{ .Values.config.webui.port }}"
+        port: 7766 # TODO: Pull this from the config section
 ingress:
   # -- Enable and configure ingress settings for the chart under this key.
   # @default -- See values.yaml
