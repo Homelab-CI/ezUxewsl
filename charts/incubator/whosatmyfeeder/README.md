@@ -1,6 +1,6 @@
 # WhosAtMyFeeder
 
-![Version: 0.0.1](https://img.shields.io/badge/Version-0.0.1-informational?style=flat-square) ![AppVersion: 0.0.1](https://img.shields.io/badge/AppVersion-0.0.1-informational?style=flat-square)
+![Version: 0.0.2](https://img.shields.io/badge/Version-0.0.2-informational?style=flat-square) ![AppVersion: 0.0.1](https://img.shields.io/badge/AppVersion-0.0.1-informational?style=flat-square)
 
 WhosAtMyFeeder helm package
 
@@ -75,6 +75,19 @@ N/A
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
+| config | object | See values.yaml | Application Settings. See https://github.com/mmcc-xx/WhosAtMyFeeder/blob/master/config/config.yml for a description of every setting |
+| config.classification.model | string | `"model.tflite"` | The classification model used |
+| config.classification.threshold | float | `0.7` | The model threshold |
+| config.frigate.camera | list | `["birdcam"]` | A list of Frigate cameras to monitor |
+| config.frigate.frigate_url | string | `"http://192.168.1.75:5000"` | The URL Frigate is accessible at |
+| config.frigate.main_topic | string | `"frigate"` | The MQTT topic Frigate is using |
+| config.frigate.mqtt_auth | bool | `false` | Specify if MQTT auth is enabled |
+| config.frigate.mqtt_password | string | `"password"` | The MQTT password if auth is enabled |
+| config.frigate.mqtt_server | string | `"192.168.1.75"` | The URL of the MQTT server |
+| config.frigate.mqtt_username | string | `"username"` | The MQTT username if auth is enabled |
+| config.frigate.object | string | `"bird"` | The Frigate object to monitor |
+| config.webui.host | string | `"0.0.0.0"` | The ip the webserver will listen on |
+| config.webui.port | int | `7766` | The port the webserver will be exposed on |
 | env | object | See below | environment variables. See more environment variables in the [whosatmyfeeder documentation](https://github.com/mmcc-xx/WhosAtMyFeeder). |
 | env.TZ | string | `"UTC"` | Set the container timezone |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
