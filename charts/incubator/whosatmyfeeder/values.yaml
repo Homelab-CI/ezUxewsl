@@ -37,9 +37,39 @@ ingress:
 # -- Configure persistence settings for the chart under this key.
 # @default -- See values.yaml
 persistence: {}
-  # config:
-  #   enabled: false
-  #   mountPath: /config
   # data:
   #   enabled: false
   #   mountPath: /data
+
+# -- Application Settings. See https://github.com/mmcc-xx/WhosAtMyFeeder/blob/master/config/config.yml
+# for a description of every setting
+# @default -- See values.yaml
+config:
+  frigate:
+    # -- The URL Frigate is accessible at
+    frigate_url: http://192.168.1.75:5000
+    # -- The URL of the MQTT server
+    mqtt_server: 192.168.1.75
+    # -- Specify if MQTT auth is enabled
+    mqtt_auth: false
+    # -- The MQTT username if auth is enabled
+    mqtt_username: username
+    # -- The MQTT password if auth is enabled
+    mqtt_password: password
+    # -- The MQTT topic Frigate is using
+    main_topic: frigate
+    # -- A list of Frigate cameras to monitor
+    camera:
+      - birdcam
+    # -- The Frigate object to monitor
+    object: bird
+  classification:
+    # -- The classification model used
+    model: model.tflite
+    # -- The model threshold
+    threshold: 0.7
+  webui:
+    # -- The port the webserver will be exposed on
+    port: {{ .Values.service.main.ports.http.port }}
+    # -- The ip the webserver will listen on
+    host: 0.0.0.0

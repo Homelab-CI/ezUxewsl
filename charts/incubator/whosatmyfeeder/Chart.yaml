@@ -2,7 +2,7 @@ apiVersion: v2
 appVersion: 0.0.1
 description: WhosAtMyFeeder helm package
 name: WhosAtMyFeeder
-version: 0.0.1
+version: 0.0.2
 kubeVersion: ">=1.16.0-0"
 keywords:
   - WhosAtMyFeeder
@@ -18,5 +18,7 @@ dependencies:
     version: 0.0.1
 annotations:
   artifacthub.io/changes: |
+    - kind: added
+      description: Added configuration configmap
     - kind: added
       description: Initial version

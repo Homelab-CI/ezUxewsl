@@ -1,0 +1,24 @@
+{{- include "common.values.setup" . -}}
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ template "common.names.fullname" . }}-config
+  labels:
+  {{- include "common.labels" . | nindent 4 }}
+data:
+  config.yml: |
+    frigate:
+      {{- range $key, $val := .Values.config.frigate }}
+      {{ $key }}= {{ $val | toRawJson }}
+      {{- end }}
+
+    classification:
+      {{- range $key, $val := .Values.config.classification }}
+      {{ $key }}= {{ $val | toRawJson }}
+      {{- end }}
+
+    webui:
+      {{- range $key, $val := .Values.config.webui }}
+      {{ $key }}= {{ $val | toRawJson }}
+      {{- end }}
