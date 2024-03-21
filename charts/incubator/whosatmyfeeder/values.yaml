@@ -26,7 +26,7 @@ service:
   main:
     ports:
       http:
-        port: 7766
+        port: {{ .Values.config.webui.port }}
 
 ingress:
   # -- Enable and configure ingress settings for the chart under this key.
@@ -70,6 +70,6 @@ config:
     threshold: 0.7
   webui:
     # -- The port the webserver will be exposed on
-    port: {{ .Values.service.main.ports.http.port }}
+    port: 7766
     # -- The ip the webserver will listen on
     host: 0.0.0.0
