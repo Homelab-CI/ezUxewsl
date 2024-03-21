@@ -1,0 +1,22 @@
+apiVersion: v2
+appVersion: 0.0.1
+description: WhosAtMyFeeder helm package
+name: WhosAtMyFeeder
+version: 0.0.1
+kubeVersion: ">=1.16.0-0"
+keywords:
+  - WhosAtMyFeeder
+home: https://github.com/mmcc-xx/WhosAtMyFeeder
+sources:
+  - https://github.com/mmcc-xx/WhosAtMyFeeder
+maintainers:
+  - name: mmcc-xx
+    email: clarkcase@gmail.com
+dependencies:
+  - name: common
+    repository: https://homelab-ci.github.io/library-1ezUxewsl
+    version: 4.5.2
+annotations:
+  artifacthub.io/changes: |
+    - kind: added
+      description: Initial version
