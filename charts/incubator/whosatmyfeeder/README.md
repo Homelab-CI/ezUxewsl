@@ -1,6 +1,6 @@
 # WhosAtMyFeeder
 
-![Version: 1.0.0](https://img.shields.io/badge/Version-1.0.0-informational?style=flat-square) ![AppVersion: 1.0.0](https://img.shields.io/badge/AppVersion-1.0.0-informational?style=flat-square)
+![Version: 0.0.1](https://img.shields.io/badge/Version-0.0.1-informational?style=flat-square) ![AppVersion: 0.0.1](https://img.shields.io/badge/AppVersion-0.0.1-informational?style=flat-square)
 
 WhosAtMyFeeder helm package
 
@@ -16,16 +16,16 @@ Kubernetes: `>=1.16.0-0`
 
 ## Dependencies
 
-| Repository                            | Name | Version |
-|---------------------------------------|------|---------|
-| https://homelab-ci.github.io/ezUxewsl | common | 4.0.0 |
+| Repository | Name | Version |
+|------------|------|---------|
+| https://homelab-ci.github.io/ezUxewsl | common | 0.0.1 |
 
 ## TL;DR
 
 ```console
 helm repo add homelab-ci https://homelab-ci.com/charts/
 helm repo update
-helm install whosatmyfeeder homelab-ci/whosatmyfeeder
+helm install WhosAtMyFeeder homelab-ci/WhosAtMyFeeder
 ```
 
 ## Installing the Chart
@@ -33,7 +33,7 @@ helm install whosatmyfeeder homelab-ci/whosatmyfeeder
 To install the chart with the release name `WhosAtMyFeeder`
 
 ```console
-helm install whosatmyfeeder homelab-ci/whosatmyfeeder
+helm install WhosAtMyFeeder homelab-ci/WhosAtMyFeeder
 ```
 
 ## Uninstalling the Chart
@@ -41,7 +41,7 @@ helm install whosatmyfeeder homelab-ci/whosatmyfeeder
 To uninstall the `WhosAtMyFeeder` deployment
 
 ```console
-helm uninstall whosatmyfeeder
+helm uninstall WhosAtMyFeeder
 ```
 
 The command removes all the Kubernetes components associated with the chart **including persistent volumes** and deletes the release.
@@ -54,15 +54,15 @@ Other values may be used from the [values.yaml](https://github.com/homelab-ci/li
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`.
 
 ```console
-helm install whosatmyfeeder \
+helm install WhosAtMyFeeder \
   --set env.TZ="America/New York" \
-    homelab-ci/whosatmyfeeder
+    homelab-ci/WhosAtMyFeeder
 ```
 
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 
 ```console
-helm install whosatmyfeeder homelab-ci/whosatmyfeeder -f values.yaml
+helm install WhosAtMyFeeder homelab-ci/WhosAtMyFeeder -f values.yaml
 ```
 
 ## Custom configuration
@@ -73,32 +73,20 @@ N/A
 
 **Important**: When deploying an application Helm chart you can add more values from our common library chart [here](https://github.com/homelab-ci/library-charts/tree/main/charts/stable/common)
 
-| Key | Type | Default                           | Description                                                                                                                   |
-|-----|------|-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| env | object | See below                         | environment variables. See more environment variables in the [WhosAtMyFeeder documentation](https://github.com/mmcc-xx/WhosAtMyFeeder). |
-| env.TZ | string | `"UTC"`                           | Set the container timezone                                                                                                    |
-| image.pullPolicy | string | `"IfNotPresent"`                  | image pull policy                                                                                                             |
-| image.repository | string | `"mmcc73/whosatmyfeeder"` | image repository                                                                                                              |
-| image.tag | string | chart.appVersion                  | image tag                                                                                                                     |
-| ingress.main | object | See values.yaml                   | Enable and configure ingress settings for the chart under this key.                                                           |
-| persistence | object | See values.yaml                   | Configure persistence settings for the chart under this key.                                                                  |
-| service | object | See values.yaml                   | Configures service settings for the chart.                                                                                    |
+| Key | Type | Default | Description |
+|-----|------|---------|-------------|
+| env | object | See below | environment variables. See more environment variables in the [whosatmyfeeder documentation](https://github.com/mmcc-xx/WhosAtMyFeeder). |
+| env.TZ | string | `"UTC"` | Set the container timezone |
+| image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
+| image.repository | string | `"mmcc73/whosatmyfeeder"` | image repository |
+| image.tag | string | chart.appVersion | image tag |
+| ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
+| persistence | object | See values.yaml | Configure persistence settings for the chart under this key. |
+| service | object | See values.yaml | Configures service settings for the chart. |
 
-## Changelog
+### Older versions
 
-### Version 1.0.0
-
-#### Added
-
-- Initial version
-
-#### Changed
-
-N/A
-
-#### Fixed
-
-N/A
+A historical overview of changes can be found on [ArtifactHUB](https://artifacthub.io/packages/helm/homelabcihelmchartstest/WhosAtMyFeeder?modal=changelog)
 
 ## Support
 
@@ -108,4 +96,4 @@ N/A
 - Join our [Discord](https://discord.gg/sTMX7Vh) community
 
 ----------------------------------------------
-Autogenerated from chart metadata using [helm-docs v1.5.0](https://github.com/norwoodj/helm-docs/releases/v1.5.0)
+Autogenerated from chart metadata using [helm-docs v1.12.0](https://github.com/norwoodj/helm-docs/releases/v1.12.0)
