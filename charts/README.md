@@ -11,3 +11,4 @@
 | ----- | ----------- |
 | [hoppscotch](incubator/hoppscotch) | Open-source API development ecosystem |
 | [ryot](incubator/ryot) | Ryot - Roll your own tracker |
+| [WhosAtMyFeeder](incubator/WhosAtMyFeeder) | WhosAtMyFeeder helm package |
