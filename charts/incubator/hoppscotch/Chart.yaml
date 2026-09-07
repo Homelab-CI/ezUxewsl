@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 2023.12.2
 description: Open-source API development ecosystem
 name: hoppscotch
-version: 0.0.2
+version: 1.0.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - hoppscotch
@@ -17,7 +17,7 @@ maintainers:
 dependencies:
   - name: common
     repository: https://homelab-ci.github.io/ezUxewsl
-    version: 0.0.1
+    version: 4.5.3
   - name: postgresql
     version: 11.6.12
     repository: https://charts.bitnami.com/bitnami
